@@ -1,0 +1,26 @@
+{
+  "name": "ssh_keygen_npm",
+  "version": "0.0.1",
+  "description": "SSH keygen module for node, using golang",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omkardusane/ssh_keygen.git"
+  },
+  "keywords": [
+    "ssh-keygen",
+    "ssh_keygen",
+    "windows",
+    "mac",
+    "linux"
+  ],
+  "author": "Omkar Dusane & Kennect Solutions Pvt. Ltd. Mumbai",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/omkardusane/ssh_keygen/issues"
+  },
+  "homepage": "https://github.com/omkardusane/ssh_keygen#readme"
+}
