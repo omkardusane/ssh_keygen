@@ -1,6 +1,6 @@
 {
     "name": "ssh_keygen_npm",
-    "version": "0.0.2",
+    "version": "0.0.21",
     "description": "SSH keygen module for node, using golang",
     "main": "index.js",
     "scripts": {
