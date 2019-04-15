@@ -13,7 +13,7 @@ import (
 )
 func main() {
 	argsWithoutProg := os.Args[1:]
-	fmt.Println(argsWithoutProg)
+	// fmt.Println(argsWithoutProg)
 	
 	savePrivateFileTo := argsWithoutProg[0]+""
 	savePublicFileTo := argsWithoutProg[0]+".pub"

@@ -6,7 +6,8 @@ var f = (keyName, callback) => {
         cwd: __dirname + "/bin"
     }, function (error, stdout, stderr) {
         // console.log('[EVALD]', { error, stdout, stderr })
-        callback(error, stdout, stderr)
+        let result = { ok: !error && stdout.match(/Key saved to/), path: pathResolved, stdout, stderr };
+        callback(error, result)
     });
 };
 module.exports = f;      
