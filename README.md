@@ -1,6 +1,16 @@
-SSH Keygen module free of any binary dependencies. 
-Only golang needed.
+SSH Keygen module free of any implied binary dependencies. (builds binary upon npm i)
 
+## Usage
+```
+var ssh_keygen_npm = require('ssh_keygen_npm')
+ssh_keygen_npm(__dirname + "/garbage/key1", (err, result) => {
+    console.log(err, result)
+})
+```
+
+## Dependency: 
+
+Only golang needed.
 
 to install golang in unix like machines, (on win please get an msi installer from golang.org)
 ```

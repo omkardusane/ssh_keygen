@@ -2,7 +2,7 @@
 package main
 import (
 	"os"
-	"fmt"
+	// "fmt"
 	"crypto/rand"
 	"crypto/rsa"
 	"crypto/x509"
@@ -14,6 +14,9 @@ import (
 func main() {
 	argsWithoutProg := os.Args[1:]
 	// fmt.Println(argsWithoutProg)
+	if(len(argsWithoutProg)<1){
+		log.Fatal("No Path Specified")
+	}
 	
 	savePrivateFileTo := argsWithoutProg[0]+""
 	savePublicFileTo := argsWithoutProg[0]+".pub"
