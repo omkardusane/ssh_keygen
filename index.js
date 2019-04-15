@@ -5,8 +5,8 @@ var f = (keyName, callback) => {
     exec('ssh_keygen.exe "' + pathResolved + '"', {
         cwd: __dirname + "/bin"
     }, function (error, stdout, stderr) {
-        console.log('[EVALD]', { error, stdout, stderr })
+        // console.log('[EVALD]', { error, stdout, stderr })
         callback(error, stdout, stderr)
     });
 };
-module.exports = f;
+module.exports = f;      
