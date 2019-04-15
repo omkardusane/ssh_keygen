@@ -1,11 +1,11 @@
 {
     "name": "ssh_keygen_npm",
-    "version": "0.0.24",
+    "version": "0.0.25",
     "description": "SSH keygen module for node, using golang",
     "main": "index.js",
     "scripts": {
         "build": "go get golang.org/x/crypto/ssh && go build -i -o ./bin/ssh_keygen.exe",
-        "test": "node ./test/test_key_generation",
+        "test": "cd test && node ./test_key_generation",
         "preinstall": "npm run build"
     },
     "repository": {

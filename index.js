@@ -1,4 +1,5 @@
 var path = require("path");
+var { promisify } = require('util')
 var exec = require('child_process').exec;
 var ssh_keygen = (keyName, callback) => {
     var pathResolved = path.resolve(keyName)
@@ -10,4 +11,4 @@ var ssh_keygen = (keyName, callback) => {
         callback(error, result)
     });
 };
-module.exports = ssh_keygen;      
+module.exports = { ssh_keygen, ssh_keygen_promise: promisify(ssh_keygen) };      

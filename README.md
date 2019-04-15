@@ -2,10 +2,14 @@ SSH Keygen module free of any implied binary dependencies. (builds binary upon n
 
 ## Usage
 ```
-var ssh_keygen_npm = require('ssh_keygen_npm')
-ssh_keygen_npm(__dirname + "/garbage/key1", (err, result) => {
+var {ssh_keygen_promise, ssh_keygen } = require('ssh_keygen_npm').
+ssh_keygen(__dirname + "/garbage/key1", (err, result) => {
     console.log(err, result)
 })
+
+ssh_keygen_promise(__dirname + "/garbage/key2").then(result => {
+    console.log(result)
+}).catch(err => console.log(err))
 ```
 
 ## Dependency: 
