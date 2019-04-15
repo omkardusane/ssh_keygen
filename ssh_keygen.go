@@ -2,7 +2,7 @@
 package main
 import (
 	"os"
-	// "fmt"
+	"fmt"
 	"crypto/rand"
 	"crypto/rsa"
 	"crypto/x509"
@@ -13,7 +13,6 @@ import (
 )
 func main() {
 	argsWithoutProg := os.Args[1:]
-	// fmt.Println(argsWithoutProg)
 	if(len(argsWithoutProg)<1){
 		log.Fatal("No Path Specified")
 	}
@@ -41,6 +40,8 @@ func main() {
 	err = writeKeyToFile([]byte(publicKeyBytes), savePublicFileTo)
 	if err != nil {
 		log.Fatal(err.Error())
+	}else{
+		fmt.Println("success")
 	}
 }
 

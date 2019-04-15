@@ -1,4 +1,4 @@
-let s = require('../index.js');
-s('./outs/testKeyGenerated', (error, stdout, stderr) => {
-    console.log({ error, stdout, stderr })
-});
+let ssh_keygen_npm = require('../index.js');
+ssh_keygen_npm( "./outs/testKeyGenerated", (err, result) => {
+    console.log(err, result)
+})
