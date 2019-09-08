@@ -3,7 +3,7 @@ var { promisify } = require('util')
 var exec = require('child_process').exec;
 var ssh_keygen = (keyName, callback) => {
     var pathResolved = path.resolve(keyName)
-    exec('ssh_keygen.exe "' + pathResolved + '"', {
+    exec('./bin/ssh_keygen.exe "' + pathResolved + '"', {
         cwd: __dirname + "/bin"
     }, function (error, stdout, stderr) {
         // console.log('[EVALD]', { error, stdout, stderr })
